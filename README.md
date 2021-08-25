@@ -19,6 +19,8 @@ LIGHT_ID=the_id_of_the_light_you_wish_to_control
 
 Save the `.env` file.
 
+## Usage
+
 Run the script:
 
 ```shell
