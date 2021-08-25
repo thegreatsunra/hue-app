@@ -21,12 +21,20 @@ Save the `.env` file.
 
 ## Usage
 
-Run the script:
+Run the Typescript script directly using ts-node:
 
 ```shell
-node ./index.js
+./node_modules/.bin/ts-node ./index.ts
 ```
 
 Assuming the light was off, it should turn the light on.
 
 Assuming the light was already on, it should do nothing.
+
+## Other Commands
+
+Lint the Typescript code:
+
+```shell
+./node_modules/.bin/eslint ./index.ts
+```
