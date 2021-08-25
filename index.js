@@ -1,11 +1,11 @@
-const v3 = require("node-hue-api").v3;
-require("dotenv").config();
+const { v3 } = require('node-hue-api');
+require('dotenv').config();
 
-const USERNAME = process.env.USERNAME;
+const { USERNAME } = process.env;
 // The name of the light we wish to retrieve by name
-const LIGHT_ID = process.env.LIGHT_ID;
+const { LIGHT_ID } = process.env;
 
-const LightState = v3.lightStates.LightState;
+const { LightState } = v3.lightStates;
 
 v3.discovery
 	.nupnpSearch()
