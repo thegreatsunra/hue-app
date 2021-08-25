@@ -5,7 +5,7 @@
 ## Getting Started
 
 ```shell
-git clone https://example.com/hue-app
+git clone https://github.com/thegreatsunra/hue-app.git
 cd hue-app
 npm install
 ```
