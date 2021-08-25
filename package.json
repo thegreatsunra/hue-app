@@ -1,0 +1,19 @@
+{
+  "name": "hue-app",
+  "version": "0.1.0",
+  "description": "Philips Hue Node.js app for controlling lights",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "philips",
+    "hue",
+    "nodejs",
+    "lights",
+    "home",
+    "automation"
+  ],
+  "author": "Dane Petersen",
+  "license": "MIT"
+}
