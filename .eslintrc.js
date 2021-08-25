@@ -1,9 +1,10 @@
 module.exports = {
+	root: true,
 	env: {
 		es2021: true,
 		node: true,
 	},
-	extends: ["airbnb-base"],
+	extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		ecmaVersion: 12,
@@ -11,6 +12,7 @@ module.exports = {
 	},
 	plugins: ["@typescript-eslint"],
 	rules: {
+		quotes: ["error", "double"],
 		indent: ["error", "tab"],
 		"no-tabs": ["error", { allowIndentationTabs: true }],
 	},
