@@ -2,12 +2,12 @@ import { v3 } from "node-hue-api";
 import dotenv from "dotenv";
 import { CronJob } from "cron";
 
+dotenv.config();
+
 const app = () => {
 	const USERNAME = process.env["USERNAME"] || "";
 	// The name of the light we wish to retrieve by name
 	const LIGHT_ID = process.env["LIGHT_ID"] || "";
-
-	dotenv.config();
 
 	const { LightState } = v3.lightStates;
 
