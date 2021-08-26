@@ -19,7 +19,7 @@
 	"dependencies": {
 		"cron": "^1.8.2",
 		"dotenv": "^10.0.0",
-		"node-hue-api": "^5.0.0-beta.7"
+		"node-hue-api": "^4.0.8"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^4.29.3",

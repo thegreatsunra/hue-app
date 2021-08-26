@@ -14,6 +14,7 @@ module.exports = {
 	rules: {
 		quotes: ["error", "double"],
 		indent: ["error", "tab"],
+		"@typescript-eslint/no-explicit-any": ["warn"],
 		"no-tabs": ["error", { allowIndentationTabs: true }],
 	},
 };

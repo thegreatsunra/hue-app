@@ -13,16 +13,16 @@ const app = () => {
 
 	v3.discovery
 		.nupnpSearch()
-		.then((searchResults) => {
+		.then((searchResults: any) => {
 			const host = searchResults[0].ipaddress;
 			return v3.api.createLocal(host).connect(USERNAME);
 		})
-		.then((api) => {
+		.then((api: any) => {
 			// Using a LightState object to build the desired state
-			const state = new LightState().on().brightness(100);
+			const state = new LightState().on(true).brightness(100);
 			return api.lights.setLightState(LIGHT_ID, state);
 		})
-		.then((result) => {
+		.then((result: any) => {
 			console.log(`Light state change was successful? ${result}`);
 		});
 
