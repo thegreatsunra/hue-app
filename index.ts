@@ -1,5 +1,6 @@
 import { v3 } from "node-hue-api";
 import dotenv from "dotenv";
+import { CronJob } from "cron";
 
 const app = () => {
 	const USERNAME = process.env["USERNAME"] || "";
@@ -24,4 +25,17 @@ const app = () => {
 		.then((result) => {
 			console.log(`Light state change was successful? ${result}`);
 		});
+
+	const job = new CronJob(
+		"*/5 * * * * *",
+		() => {
+			console.log("You will see this message every 5 seconds");
+		},
+		null,
+		true,
+		"America/Chicago"
+	);
+	job.start();
+};
+
 app();
