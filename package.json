@@ -17,6 +17,7 @@
 	"author": "Dane Petersen",
 	"license": "MIT",
 	"dependencies": {
+		"cron": "^1.8.2",
 		"dotenv": "^10.0.0",
 		"node-hue-api": "^5.0.0-beta.7"
 	},
